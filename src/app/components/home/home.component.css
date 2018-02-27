@@ -1,0 +1,85 @@
+
+.career img {
+  opacity: 0.3;
+}
+
+.career {
+  background-color: darkblue;
+  position: relative;
+}
+
+.introduction{
+  margin-left: 20px;
+  position: absolute;
+  top: 40%;
+  vertical-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .introduction{
+    top:20%;
+  }
+  .introduction h1{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 547px) {
+  .introduction h1{
+    font-size: 25px;
+  }
+}
+
+.section-schools .long-copy {
+  margin-bottom: 30px;
+}
+.section-schools h2 {
+  font-size: 140%;
+}
+
+.school-lists > div{
+  box-shadow: 1px 1px 3px #202c88;
+}
+
+.school-description {
+  margin: 20px 5px;
+}
+
+.school-description h2, .personal-description h2{
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+.app-screen {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 3px #202c88;
+  margin-bottom: 20px;
+}
+
+.about-bullets {
+  margin-bottom: 20px;
+}
+
+.section-about {
+  margin: 20px 5px;
+}
+
+.about-bullet div {
+  color: deepskyblue;
+  font-size: 150%;
+  height: 54px;
+  width: 54px;
+  border: 2px solid darkblue;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+  float: left;
+  padding: 5px;
+}

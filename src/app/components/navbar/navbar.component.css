@@ -1,0 +1,14 @@
+.navbar-pic {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  z-index: 999;
+}

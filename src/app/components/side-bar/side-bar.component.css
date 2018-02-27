@@ -1,0 +1,23 @@
+.my-cards {
+  background-color: deepskyblue;
+}
+.small-header {
+  background-color: darkblue;
+  margin: 20px 0;
+  box-shadow: 1px 1px 3px #202c88;
+}
+.small-header h4 {
+  color: deepskyblue;
+}
+
+.small-header div{
+  overflow: scroll;
+  height: 300px;
+}
+
+.small-header a {
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}

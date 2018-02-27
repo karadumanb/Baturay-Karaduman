@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 myNavbar" ngStickyNav stickyClass = "sticky">
+  <div class="container">
+    <a routerLink="/" class="navbar-brand"><img src="../../../assets/img/profil-pic.png" alt="Profil Photo" width="49" height="62" class="navbar-pic"></a>
+    <a routerLink="/" class="navbar-brand">B. KARADUMAN</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" (click)="isCollapsed = !isCollapsed">
+      <i [ngClass]="{'navbar-toggler-icon': isCollapsed, 'fa fa-close fa-2x': !isCollapsed}"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="/" class="nav-link">Dashboard</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" id="waypoint">
+        <li class="nav-item">
+          <a routerLink="/settings" class="nav-link">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/login" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/register" class="nav-link">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

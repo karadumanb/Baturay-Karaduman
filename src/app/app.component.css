@@ -1,0 +1,5 @@
+@media (max-width: 993px) {
+  .post-cards {
+    display: none;
+  }
+}
