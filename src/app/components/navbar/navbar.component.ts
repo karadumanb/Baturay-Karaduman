@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {SharedService} from '../../services/shared.service';
+import {TranslateService} from '@ngx-translate/core';
 
 
 declare var $: any;
@@ -14,21 +16,30 @@ export class NavbarComponent implements OnInit {
   isCollapsed: boolean = true;
 
 
-  constructor() {
+  constructor(public translate: TranslateService, public shared: SharedService) {
 
   }
 
   ngOnInit() {
-/*
-    var waypoint = new Waypoint({
-      element: document.getElementById('waypoint'),
-      handler: function(direction) {
-        console.log('Scrolled to waypoint!');
-      }
-    });
 
-    waypoint.handler('up');
-*/
     }
+/*
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event) {
+    const number =  document.documentElement.scrollTop;
+    if(number > 600) {
+      this.shared.stickyNavigation = true;
+    } else {
+      this.shared.stickyNavigation = false;
+    }
+  }
+*/
 
+  toggleLang() {
+    if (this.translate.currentLang === 'en'){
+      this.translate.use('tr');
+    } else {
+      this.translate.use('en');
+    }
+  }
 }

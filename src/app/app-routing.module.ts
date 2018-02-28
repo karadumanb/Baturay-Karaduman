@@ -6,6 +6,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import {LoginComponent} from './components/login/login.component';
 import {RegisterComponent} from './components/register/register.component';
 import {SettingsComponent} from './components/settings/settings.component';
+import {TranslateModule} from '@ngx-translate/core';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -21,7 +23,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(
       routes
-    )
+    ),
+    TranslateModule.forRoot()
   ]
 })
 export class AppRoutingModule { }

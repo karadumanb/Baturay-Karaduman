@@ -8,7 +8,31 @@
   position: fixed;
   left: 0;
   top: 0;
-
   width: 100%;
   z-index: 999;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+@media (max-width: 614px) {
+  .toggle-button {
+    width: 100%;
+    position: relative;
+    top: unset;
+    right: unset;
+  }
 }

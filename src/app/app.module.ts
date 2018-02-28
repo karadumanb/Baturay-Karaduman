@@ -15,6 +15,15 @@ import { RegisterComponent } from './components/register/register.component';
 import {AppRoutingModule} from './app-routing.module';
 
 import { StickyNavModule } from 'ng2-sticky-nav';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { SharedService } from './services/shared.service';
+
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -32,9 +41,17 @@ import { StickyNavModule } from 'ng2-sticky-nav';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StickyNavModule
+    StickyNavModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
