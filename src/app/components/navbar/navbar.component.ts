@@ -23,17 +23,17 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
 
     }
-/*
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event) {
     const number =  document.documentElement.scrollTop;
-    if(number > 600) {
-      this.shared.stickyNavigation = true;
+    if (number > 600 || number < 50) {
+      $('nav').fadeIn();
     } else {
-      this.shared.stickyNavigation = false;
+      $('nav').fadeOut();
     }
   }
-*/
+
 
   toggleLang() {
     if (this.translate.currentLang === 'en'){

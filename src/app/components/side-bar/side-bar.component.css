@@ -15,9 +15,18 @@
   height: 300px;
 }
 
-.small-header a {
+.small-header a, .all-blogs {
   text-decoration: none;
   position: absolute;
   right: 10px;
   bottom: 0px;
+}
+
+.all-blogs {
+  padding: 3px;
+  color: darkblue;
+}
+
+.all-blogs:hover {
+  font-weight: bold;
 }

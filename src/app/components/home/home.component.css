@@ -34,9 +34,7 @@
 .section-schools .long-copy {
   margin-bottom: 30px;
 }
-.section-schools h2 {
-  font-size: 140%;
-}
+
 
 .school-lists > div{
   box-shadow: 1px 1px 3px #202c88;
@@ -82,4 +80,69 @@
   margin-right: 25px;
   float: left;
   padding: 5px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.section-companies img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.box {
+  margin: 20px 0;
+}
+
+.section-companies i {
+  color: darkblue;
+  font-size: 22px;
+}
+
+.section-companies h2 {
+  text-align: center;
+  width: 100%;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.section-companies {
+  margin: 20px 0;
 }

@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {SharedService} from '../../services/shared.service';
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -9,21 +10,29 @@ import {SharedService} from '../../services/shared.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public translate: TranslateService, public shared: SharedService) { }
 
-  ngOnInit() {
+  constructor(public translate: TranslateService, public shared: SharedService) {
+
   }
 
-  /*
+  ngOnInit() {
+
+
+  }
+
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event) {
     const number =  document.documentElement.scrollTop;
-    if(number > 600) {
-      this.shared.stickyNavigation = true;
-    } else {
-      this.shared.stickyNavigation = false;
+    const animatedClass = $('.app-screen');
+    console.log(number);
+    if (number > ($('.animated-screen').offset().top - 400)) {
+      console.log(animatedClass.offset().top);
+      animatedClass.addClass('animated fadeInUp');
+      //how to stop event
     }
   }
-*/
+
+
 }
 
