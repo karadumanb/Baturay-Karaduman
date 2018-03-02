@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     const animatedClass = $('.app-screen');
     console.log(number);
     if (number > ($('.animated-screen').offset().top - 400)) {
-      console.log(animatedClass.offset().top);
+      animatedClass.css('display', 'block');
       animatedClass.addClass('animated fadeInUp');
       //how to stop event
     }

@@ -51,13 +51,25 @@
   color: darkblue;
   margin-bottom: 20px;
 }
-
+.section-companies-header h2, .section-skills-header h2{
+  margin-bottom: 20px;
+}
+.section-companies-header::after, .personal-description::after, .section-skills-header::after{
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: darkblue;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
 .app-screen {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
   box-shadow: 1px 1px 3px #202c88;
   margin-bottom: 20px;
+  display: none;
 }
 
 .about-bullets {
@@ -136,7 +148,7 @@
   font-size: 22px;
 }
 
-.section-companies h2 {
+.section-companies h2, .section-skills h2, .section-skills h3 {
   text-align: center;
   width: 100%;
   color: darkblue;
@@ -145,4 +157,22 @@
 
 .section-companies {
   margin: 20px 0;
+}
+
+.skill-box li {
+  list-style: none;
+}
+
+.skill-box i {
+  color: darkblue;
+}
+
+.skills-box > div, .company-box > div {
+  box-shadow: 1px 1px 3px #202c88;
+}
+
+.section-skills h3 {
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom:  1px solid darkblue;
 }
