@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
   onWindowScroll(event) {
     const number =  document.documentElement.scrollTop;
     const animatedClass = $('.app-screen');
-    console.log(number);
     if (number > ($('.animated-screen').offset().top - 400)) {
       animatedClass.css('display', 'block');
       animatedClass.addClass('animated fadeInUp');

@@ -99,6 +99,7 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  overflow: hidden;
 }
 @-webkit-keyframes fadeInUp {
   from {
@@ -175,4 +176,60 @@
   font-size: 20px;
   padding: 10px 0;
   border-bottom:  1px solid darkblue;
+}
+
+.nav-pills li {
+  width: 25%;
+  background-color: darkblue;
+  border-radius: 10px;
+  border: 1px solid #202c88;
+  text-align: center;
+}
+.nav-pills li a {
+  text-decoration: none;
+  color: skyblue;
+  font-weight: bold;
+  position: relative;
+}
+.nav-pills li:hover{
+  background-color: skyblue;
+}
+.nav-pills li:hover > a {
+  color: darkblue;
+}
+
+@media (max-width: 450px) {
+  .nav-pills li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 893px) {
+  .app-screen {
+    margin: 20px auto;
+    height: 300px;
+  }
+}
+
+section {
+  background-color: rgba(227, 226, 231, 0.7);
+  margin-top: 20px;
+}
+
+.row {
+  margin: auto;
+}
+
+.tab-links .active::after {
+  content: '';
+  position: absolute;
+  bottom: -27px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 23px solid rgba(227, 226, 231, 0.7);
+}
+.tab-links:last-child .active::after {
+  left: -40px;
 }
