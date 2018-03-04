@@ -21,6 +21,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SharedService } from './services/shared.service';
 import { ContactComponent } from './components/contact/contact.component';
 import {FormsModule} from '@angular/forms';
+import { BlogComponent } from './components/blog/blog.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent,
     SettingsComponent,
     RegisterComponent,
-    ContactComponent
+    ContactComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
