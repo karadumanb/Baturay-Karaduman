@@ -208,6 +208,9 @@
     margin: 20px auto;
     height: 300px;
   }
+  .symbols {
+    width: 100%;
+  }
 }
 
 section {

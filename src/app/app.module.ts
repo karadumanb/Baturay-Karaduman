@@ -19,6 +19,8 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SharedService } from './services/shared.service';
+import { ContactComponent } from './components/contact/contact.component';
+import {FormsModule} from '@angular/forms';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -36,11 +38,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     SideBarComponent,
     LoginComponent,
     SettingsComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     StickyNavModule,
     HttpClientModule,
     TranslateModule.forRoot({

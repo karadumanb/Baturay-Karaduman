@@ -3,9 +3,11 @@
   "hello": "Merhaba, ben Baturay.",
   "junior": "Junior web geliştiricisiyim.",
   "careerGoals":"Kariyer Hedeflerim",
-  "showMore":"Daha fazlası",
+  "contactMe":"İletişime geç!",
   "login": "Giriş",
   "settings": "Ayarlar",
   "home": "Anasayfa",
-  "register": "Kayıt ol"
+  "register": "Kayıt ol",
+  "aboutMe": "Hakkımda"
+  "contact": "İletişim"
 }

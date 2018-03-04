@@ -3,9 +3,11 @@
   "hello": "Hello, I am Baturay.",
   "junior": "Junior in web development.",
   "careerGoals":"Career Goals",
-  "showMore":"Show me more",
+  "contactMe":"Contact me!",
   "login": "Login",
   "settings": "Settings",
   "home": "Home",
-  "register": "Register"
+  "register": "Register",
+  "aboutMe": "About me",
+  "contact": "Contact"
 }
