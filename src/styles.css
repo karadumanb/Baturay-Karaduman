@@ -1,1 +1,368 @@
-/* You can add global styles to this file, and also import other style files */
+/*  HOME PAGE   */
+.career img {
+    opacity: 0.3;
+  }
+  
+  .career {
+    background-color: darkblue;
+    position: relative;
+  }
+  
+  .introduction{
+    margin-left: 20px;
+    position: absolute;
+    top: 40%;
+    vertical-align: center;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .introduction{
+      top:20%;
+    }
+    .introduction h1{
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 547px) {
+    .introduction h1{
+      font-size: 25px;
+    }
+  }
+  
+  .section-schools .long-copy {
+    margin-bottom: 30px;
+  }
+  
+  
+  .school-lists > div{
+    box-shadow: 1px 1px 3px #202c88;
+  }
+  
+  .school-description {
+    margin: 20px 5px;
+  }
+  
+  .school-description h2, .personal-description h2{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: darkblue;
+    margin-bottom: 20px;
+  }
+  .section-companies-header h2, .section-skills-header h2{
+    margin-bottom: 20px;
+  }
+  .section-companies-header::after, .personal-description::after, .section-skills-header::after{
+      content: '';
+      width: 100px;
+      height: 5px;
+      background-color: darkblue;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+  .app-screen {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px #202c88;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  .about-bullets {
+    margin-bottom: 20px;
+  }
+  
+  .section-about {
+    margin: 20px 5px;
+  }
+  
+  .about-bullet div {
+    color: deepskyblue;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    overflow: hidden;
+  }
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
+  .section-companies img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .box {
+    margin: 20px 0;
+  }
+  
+  .section-companies i {
+    color: darkblue;
+    font-size: 22px;
+  }
+  
+  .section-companies h2, .section-skills h2, .section-skills h3 {
+    text-align: center;
+    width: 100%;
+    color: darkblue;
+    font-weight: bold;
+  }
+  
+  .section-companies {
+    margin: 20px 0;
+  }
+  
+  .skill-box li {
+    list-style: none;
+  }
+  
+  .skill-box i {
+    color: darkblue;
+  }
+  
+  .skills-box > div, .company-box > div {
+    box-shadow: 1px 1px 3px #202c88;
+  }
+  
+  .section-skills h3 {
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom:  1px solid darkblue;
+  }
+  
+  .nav-pills li {
+    width: 25%;
+    background-color: darkblue;
+    border-radius: 10px;
+    border: 1px solid #202c88;
+    text-align: center;
+  }
+  .nav-pills li a {
+    text-decoration: none;
+    color: skyblue;
+    font-weight: bold;
+    position: relative;
+  }
+  .nav-pills li:hover{
+    background-color: skyblue;
+  }
+  .nav-pills li:hover > a {
+    color: darkblue;
+  }
+  
+  @media (max-width: 450px) {
+    .nav-pills li {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 893px) {
+    .app-screen {
+      margin: 20px auto;
+      height: 300px;
+    }
+    .symbols {
+      width: 100%;
+    }
+  }
+  .tab-links .active::after {
+    content: '';
+    position: absolute;
+    bottom: -27px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 23px solid rgba(227, 226, 231, 0.7);
+  }
+  .tab-links:last-child .active::after {
+    left: -40px;
+  }
+  
+.my-home-page section {
+    background-color: rgba(227, 226, 231, 0.7);
+    margin-top: 20px;
+  }
+  
+  .my-home-page .row {
+    margin: auto;
+  }
+  
+  /*    FOOTER   */
+  footer {
+    background-color: rgb(75, 89, 145);
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-top: 10px;
+  
+  }
+  
+  footer ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .infos li:not(:last-child){
+      margin-right: 30px;
+  }
+
+  footer a:link,
+  footer a:visited {
+    color: darkblue;
+    text-decoration: none;
+  }
+  
+  footer a:hover,
+  footer a:active {
+    color: deepskyblue;
+  }
+  
+  footer .copy-right {
+    text-align: center;
+  }
+  
+  @media (max-width: 600px){
+    footer {
+      display: none!important;
+    }
+  }
+
+  @media (max-width: 750px){
+    footer ul li{
+      margin-right: 10px;
+    }
+  }
+  
+  /* NAVBAR */
+  .navbar-pic {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    width: 45px!important;
+    cursor: pointer;
+  }
+  
+  .navbar-container {
+    position: relative;
+  }
+  
+  @media (max-width: 614px) {
+    .toggle-button {
+      float: right;
+      position: relative;
+      top: unset;
+      right: unset;
+    }
+  }
+
+  /*    SIDEBAR */
+
+  .my-cards {
+    background-color: deepskyblue!important;
+    padding-bottom: 50px!important;
+  }
+  .small-header {
+    background-color: darkblue!important;
+    margin: 20px 0;
+    box-shadow: 1px 1px 3px #202c88;
+  }
+  .small-header h4 {
+    color: deepskyblue;
+  }
+  .my-cards h3 {
+      color: darkblue;
+  }
+  
+  .small-header div{
+    overflow: scroll;
+    height: 300px;
+  }
+  
+  .small-header a, .all-blogs {
+    text-decoration: none!important;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+  }
+  
+  .all-blogs {
+    padding: 3px;
+    color: darkblue!important;
+  }
+  
+  .all-blogs:hover {
+    font-weight: bold;
+  }
+  

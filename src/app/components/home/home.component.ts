@@ -5,8 +5,7 @@ declare var $: any;
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
 
@@ -30,6 +29,10 @@ export class HomeComponent implements OnInit {
       animatedClass.addClass('animated fadeInUp');
       //how to stop event
     }
+  }
+
+  startSlide() {
+    console.log("this works");
   }
 
 

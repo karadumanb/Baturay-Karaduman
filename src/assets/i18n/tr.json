@@ -8,6 +8,20 @@
   "settings": "Ayarlar",
   "home": "Anasayfa",
   "register": "Kayıt ol",
-  "aboutMe": "Hakkımda"
-  "contact": "İletişim"
+  "aboutMe": "Hakkımda",
+  "contact": "İletişim",
+  "personal": "KİŞİSEL",
+  "education": "EĞİTİM",
+  "experience": "TECRÜBELER",
+  "skill": "YETENEKLER",
+  "personalInfo": "Kişisel Bilgiler",
+  "inSummary": "Özetle",
+  "schoolFuture": "Okul geleceğin pratiğidir",
+  "practice": "Pratik sizi mükemmel yapandır",
+  "myExperience": "Bazı şirketlerdeki tecrübelerim",
+  "whatDone": "Bu zamana kadar ne yaptım!",
+  "onMyOwn": "Kendi Başıma",
+  "professionally": "Profesyonel Olarak",
+  "projects": "Projeler"
+
 }

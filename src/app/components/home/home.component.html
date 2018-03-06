@@ -1,22 +1,23 @@
+<div class="my-home-page">
 <div class="career">
   <img width="100%" src="../../../assets/img/career.jpg" alt="career">
   <div class="introduction">
     <h1>{{'hello' | translate}}<br>{{'junior' | translate}}</h1>
-    <a class="btn btn-primary mt-1" href="#">{{'careerGoals' | translate}}</a>
+    <a class="btn btn-primary mt-1" (click)="startSlide()">{{'careerGoals' | translate}}</a>
     <a class="btn btn-secondary mt-1" routerLink="/contact">{{'contactMe' | translate}}</a>
   </div>
 </div>
 <ul class="nav nav-pills">
-  <li class="tab-links"><a data-toggle="pill" href="#tab1" class="active">PERSONAL</a></li>
-  <li class="tab-links"><a data-toggle="pill" href="#tab2">EDUCATION</a></li>
-  <li class="tab-links"><a data-toggle="pill" href="#tab3">EXPERIENCE</a></li>
-  <li class="tab-links"><a data-toggle="pill" href="#tab4">SKILL</a></li>
+  <li class="tab-links"><a data-toggle="pill" href="#tab1" class="active">{{'personal' | translate}}</a></li>
+  <li class="tab-links"><a data-toggle="pill" href="#tab2">{{'education' | translate}}</a></li>
+  <li class="tab-links"><a data-toggle="pill" href="#tab3">{{'experience' | translate}}</a></li>
+  <li class="tab-links"><a data-toggle="pill" href="#tab4">{{'skill' | translate}}</a></li>
 </ul>
 <div class="tab-content">
   <div id="tab1" class="tab-pane fade in active show">
     <section class="section-about" id="personal-info">
       <div class="row personal-description">
-        <h2>Personal Information &mdash; In summary</h2>
+        <h2>{{'personalInfo' | translate}} &mdash; {{'inSummary' | translate}}</h2>
       </div>
       <div class="row">
         <div class="col-lg-6 animated-screen">
@@ -46,7 +47,7 @@
   <div id="tab2" class="tab-pane fade">
     <section class="section-schools">
       <div class="row school-description">
-        <h2>School is practice for future<br> &mdash; <br>Practice makes perfect<br></h2>
+        <h2>{{'schoolFuture' | translate}}<br> &mdash; <br>{{'practice' | translate}}<br></h2>
         <p class="long-copy">
           Hello, i've graduated from Istanbul Technical University and also i am about to graduate from Anadolu University as open university.<br><span style="font-size: 10px; font-style: italic;">FAQ: Why did it take long to graduate?<br>Because, i did Erasmus during the last year of my bachelor. I could not find appropriate lectures at host university. I took the classes of last year all over again. In other words, i did not have trouble with passing exams successfully.</span>
         </p>
@@ -86,10 +87,10 @@
   <div id="tab3" class="tab-pane fade">
     <section class="section-companies" id="companies">
       <div class="row section-companies-header">
-        <h2>My experiences are in these companies</h2>
+        <h2>{{'myExperience' | translate}}</h2>
       </div>
       <div class="row company-box">
-        <div class="col span-1-of-3 box">
+        <div class="col-md-4 box">
           <img src="../../../assets/img/kolektif.png" alt="Kolektiflabs">
           <h3>Kolektiflabs</h3>
           <div class="company-feature">
@@ -109,7 +110,7 @@
             <a href="http://www.kolektiflabs.com/">kolektiflabs.com</a>
           </div>
         </div>
-        <div class="col span-1-of-3 box">
+        <div class="col-md-4 box">
           <img src="../../../assets/img/huawei.png" alt="HUAWEI">
           <h3>HUAWEI</h3>
           <div class="company-feature">
@@ -129,7 +130,7 @@
             <a href="http://www.huawei.com/tr/">huawei.com/tr/</a>
           </div>
         </div>
-        <div class="col span-1-of-3 box">
+        <div class="col-md-4 box">
           <img src="../../../assets/img/telista.jpg" alt="Telista Bilisim">
           <h3>Telista Bilisim</h3>
           <div class="company-feature">
@@ -151,7 +152,7 @@
         </div>
       </div>
       <div class="row company-box">
-        <div class="col span-1-of-3 box">
+        <div class="col-md-4 box">
           <img src="../../../assets/img/ituRF.jpg" alt="ITU RF Laboratory">
           <h3>ITU RF Laboratory</h3>
           <div class="company-feature">
@@ -171,7 +172,7 @@
             <a href="http://www.rfid.itu.edu.tr/">rfid.itu.edu.tr</a>
           </div>
         </div>
-        <div class="col span-1-of-3 box">
+        <div class="col-md-4 box">
           <img src="../../../assets/img/mercedes.jpg" alt="Mercedes Benz Turk">
           <h3>Mercedes Benz Turk</h3>
           <div class="company-feature">
@@ -191,7 +192,7 @@
             <a href="https://www.mercedes-benz.com.tr/">mercedes-benz.com</a>
           </div>
         </div>
-        <div class="col span-1-of-3 box">
+        <div class="col-md-4 box">
           <img src="../../../assets/img/polytechnology.png" alt="POlytechnology">
           <h3>Polytechnology</h3>
           <div class="company-feature">
@@ -217,13 +218,13 @@
   <div id="tab4" class="tab-pane fade">
     <section class="section-skills" id="skills">
       <div class="row section-skills-header">
-        <h2>What have i done so far!</h2>
+        <h2>{{'whatDone' | translate}}</h2>
       </div>
       <div class="row skills-box">
         <div class="col-md-4">
           <div class="skill-box">
             <div>
-              <h3>On my own</h3>
+              <h3>{{'onMyOwn' | translate}}</h3>
             </div>
             <div>
               <ul>
@@ -242,7 +243,7 @@
         <div class="col-md-4">
           <div class="skill-box">
             <div>
-              <h3>Professionaly</h3>
+              <h3>{{'professionally' | translate}}</h3>
             </div>
             <div>
               <ul>
@@ -261,7 +262,7 @@
         <div class="col-md-4">
           <div class="skill-box">
             <div>
-              <h3>Projects</h3>
+              <h3>{{'projects' | translate}}</h3>
             </div>
             <div>
               <ul>
@@ -281,7 +282,7 @@
     </section>
   </div>
 </div>
-
+</div>
 
 
 
