@@ -5,9 +5,10 @@ import { DetailComponent } from './components/detail/detail.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {LoginComponent} from './components/login/login.component';
 import {RegisterComponent} from './components/register/register.component';
-import {SettingsComponent} from './components/settings/settings.component';
+import {BlogsComponent} from './components/blogs/blogs.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {ContactComponent} from './components/contact/contact.component';
+import {BlogComponent} from './components/blog/blog.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'details', component: DetailComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'settings', component: SettingsComponent},
+  {path: 'blogs', component: BlogsComponent},
+  {path: 'blog', component: BlogComponent},
   {path: 'contact', component: ContactComponent},
   {path: '**', component: NotFoundComponent}
 ];

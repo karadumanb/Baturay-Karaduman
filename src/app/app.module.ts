@@ -10,7 +10,7 @@ import { DetailComponent } from './components/detail/detail.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { LoginComponent } from './components/login/login.component';
-import { SettingsComponent } from './components/settings/settings.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
 import { RegisterComponent } from './components/register/register.component';
 import {AppRoutingModule} from './app-routing.module';
 
@@ -38,7 +38,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NotFoundComponent,
     SideBarComponent,
     LoginComponent,
-    SettingsComponent,
+    BlogsComponent,
     RegisterComponent,
     ContactComponent,
     BlogComponent
