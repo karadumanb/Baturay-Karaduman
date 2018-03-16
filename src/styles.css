@@ -417,3 +417,43 @@
   .blog-icon {
     margin-top: 40px;
   }
+
+.accordion:after {
+    content: '\002B';
+    color: darkblue;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/*.active + .panel {
+  max-height: unset;
+}*/
+
+.accordion {
+  background-color: #eee;
+  color: skyblue;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion.active, .accordion:hover {
+  background-color: blue;
+}
