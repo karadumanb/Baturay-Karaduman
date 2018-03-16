@@ -437,10 +437,6 @@
   transition: max-height 0.4s ease-out;
 }
 
-/*.active + .panel {
-  max-height: unset;
-}*/
-
 .accordion {
   background-color: #eee;
   color: skyblue;

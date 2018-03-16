@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../../models/blog.model';
+import { SharedService } from '../../services/shared.service';
 declare var $ :any;
 @Component({
   selector: 'app-blogs',
@@ -7,12 +8,14 @@ declare var $ :any;
 })
 export class BlogsComponent implements OnInit {
   blogs:Blog[] = [];
-  constructor() { 
+  constructor(public shared:SharedService) { 
     
   }
 
   ngOnInit() {
-    
+    this.shared.getBlogs().subscribe(res=>{
+      console.log(res);
+    });
   }
 
   accord($event) {
