@@ -3,10 +3,10 @@
 <input type="text" name="title" id="title" class="title" placeholder="Type title...">
 <textarea name="description" id="description" class="description" cols="300" rows="30" placeholder="Type description..."></textarea>
 <div class="row blog-icon">
-  <div class="col-6" style="text-align: center;">
+  <div class="col-6" style="text-align: center;" (click)="deleteBlog(blog)">
     <div class="fa fa-close fa-4x" style="color: red;"></div>
   </div>
-  <div class="col-6" style="text-align: center;">
+  <div class="col-6" style="text-align: center;" (click)="createBlog()">
     <div class="fa fa-share fa-4x" style="color: green;"></div>
   </div>
 </div>

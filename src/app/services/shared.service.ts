@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Blog } from '../models/blog.model';
-import {HttpClient} from '@angular/common/http';
+import Blog  from '../models/blog.model';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import {Response} from '@angular/http';
 
 @Injectable()
 export class SharedService {
 
   apiUrl: string = 'http://localhost:3000';
-  endpoint: string = this.apiUrl + 'apis/my-blog';
+  endpoint: string = `${this.apiUrl}/api/blogs`;
 
   constructor(public translate: TranslateService, private http: HttpClient) {
     translate.addLangs(['en', 'tr']);
@@ -19,7 +20,7 @@ export class SharedService {
   }
   getBlogs(): Observable<Blog[]> {
     return this.http.get(this.endpoint).map(res => {
-      return res['data'].doc as Blog[];
+      return res['data'].docs as Blog[];
     });
   }
 

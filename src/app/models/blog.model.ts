@@ -1,9 +1,9 @@
-export class Blog {
+class Blog {
   _id: string;
   title: string;
   description: string;
   date: Date;
-  status: string;
+  status?: string;
   constructor() {
     this.title = '';
     this.description = '';
@@ -11,3 +11,4 @@ export class Blog {
     this.status = '';
   }
 }
+export default Blog;

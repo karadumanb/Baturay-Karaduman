@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Blog } from '../../models/blog.model';
+import Blog from '../../models/blog.model';
 import { SharedService } from '../../services/shared.service';
 declare var $ :any;
 @Component({
@@ -7,14 +7,17 @@ declare var $ :any;
   templateUrl: './blogs.component.html'
 })
 export class BlogsComponent implements OnInit {
-  blogs:Blog[] = [];
+ // blogs:Blog[] = [];
+  public newBlog: Blog = new Blog()
+
+  blogs: Blog[];
   constructor(public shared:SharedService) { 
     
   }
 
   ngOnInit() {
-    this.shared.getBlogs().subscribe(res=>{
-      console.log(res);
+   this.shared.getBlogs().subscribe(res=>{
+      this.blogs = res;
     });
   }
 
