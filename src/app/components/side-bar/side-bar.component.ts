@@ -7,7 +7,7 @@ import Blog from '../../models/blog.model';
   templateUrl: './side-bar.component.html'
 })
 export class SideBarComponent implements OnInit {
-  blogs: Blog[];
+  blogs: Blog[] = [];
   constructor(public shared: SharedService) { }
 
   ngOnInit() {
