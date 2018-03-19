@@ -1,13 +1,16 @@
 <h2 style="text-align: center;">{{'writeBlog'  | translate}}</h2>
 
-<input type="text" name="title" id="title" class="title" placeholder="Type title...">
-<textarea name="description" id="description" class="description" cols="300" rows="30" placeholder="Type description..."></textarea>
+<input type="text" name="title" id="title" class="title" [(ngModel)]="newBlog.title" placeholder="Type title...">
+<textarea name="description" id="description" class="description" [(ngModel)]="newBlog.description"  cols="300" rows="30" placeholder="Type description..."></textarea>
 <div class="row blog-icon">
-  <div class="col-6" style="text-align: center;" (click)="deleteBlog(blog)">
-    <div class="fa fa-close fa-4x" style="color: red;"></div>
+  <div class="col-4" style="text-align: center;" (click)="deleteBlog(blog)">
+    <div class="icon fa fa-close fa-4x" style="color: red;"></div>
   </div>
-  <div class="col-6" style="text-align: center;" (click)="createBlog()">
-    <div class="fa fa-share fa-4x" style="color: green;"></div>
+  <div class="col-4" style="text-align: center;" (click)="createBlog(false)">
+    <div class="icon fa fa-check fa-4x" style="color: green;"></div>
+  </div>
+  <div class="col-4" style="text-align: center;" (click)="createBlog(true)">
+    <div class="icon fa fa-share fa-4x" style="color: blue;"></div>
   </div>
 </div>
 

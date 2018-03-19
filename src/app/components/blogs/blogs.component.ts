@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Blog from '../../models/blog.model';
 import { SharedService } from '../../services/shared.service';
+import { Router } from '@angular/router';
 declare var $ :any;
 @Component({
   selector: 'app-blogs',
@@ -11,7 +12,7 @@ export class BlogsComponent implements OnInit {
   public newBlog: Blog = new Blog()
 
   blogs: Blog[];
-  constructor(public shared:SharedService) { 
+  constructor(public shared:SharedService, private router: Router) { 
     
   }
 
@@ -19,6 +20,19 @@ export class BlogsComponent implements OnInit {
    this.shared.getBlogs().subscribe(res=>{
       this.blogs = res;
     });
+  }
+
+  deleteBlog(blog: Blog) {
+    if(confirm('Are you sure to delete this post permenantly?')){
+      this.shared.deleteBlog(blog._id).subscribe(res => {
+        this.blogs.splice(this.blogs.indexOf(blog), 1);
+      });
+    }
+  }
+
+  navigateBlog(blog) {
+    this.shared.editBlogs.push(blog);
+    this.router.navigate(['/blog']);
   }
 
   accord($event) {

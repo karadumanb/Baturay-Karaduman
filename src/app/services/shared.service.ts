@@ -8,7 +8,7 @@ import {Response} from '@angular/http';
 
 @Injectable()
 export class SharedService {
-
+  editBlogs: Blog[] = [];
   apiUrl: string = 'http://localhost:3000';
   endpoint: string = `${this.apiUrl}/api/blogs`;
 
@@ -29,7 +29,7 @@ export class SharedService {
   }
 
   deleteBlog(id: string): any {
-    return this.http.delete(this.endpoint + id);
+    return this.http.delete(this.endpoint + '/' + id);
   }
 
   editBlog(blog: Blog): any {
