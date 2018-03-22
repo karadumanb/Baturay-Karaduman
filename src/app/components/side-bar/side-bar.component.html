@@ -2,7 +2,7 @@
   <h3>Blog Posts</h3>
   <span routerLink="/blog" class="add-blog fa fa-plus"> Add Blog</span>
   <div class="card card-header small-header" *ngFor="let blog of blogs; let i = index">
-    <span *ngIf="i<3">
+    <span *ngIf="i<3 && blog">
       <h4>{{blog.title}}</h4>
       <div class="card card-body mb-3">
         <p>{{blog.description}}
