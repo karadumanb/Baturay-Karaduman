@@ -11,12 +11,16 @@ export class SharedService {
   editBlogs: Blog[] = [];
   apiUrl: string = 'http://localhost:3000';
   endpoint: string = `${this.apiUrl}/api/blogs`;
+  blogs: Blog[] = [];
 
   constructor(public translate: TranslateService, private http: HttpClient) {
     translate.addLangs(['en', 'tr']);
     translate.setDefaultLang('en');
     translate.use('en');
     console.log(translate.currentLang);
+    this.getBlogs().subscribe(res=>{
+      this.blogs = res;
+    });
   }
   getBlogs(): Observable<Blog[]> {
     return this.http.get(this.endpoint).map(res => {

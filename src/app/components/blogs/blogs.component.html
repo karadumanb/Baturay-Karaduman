@@ -1,4 +1,4 @@
-<div id="accordion" (click)="accord($event)" *ngFor="let blog of blogs">
+<div id="accordion" (click)="accord($event)" *ngFor="let blog of shared.blogs">
     <button class="accordion">{{blog.title}}</button>
     <div class="panel">
         <p style="margin: 20px auto;">{{blog.description}}</p>
@@ -6,6 +6,6 @@
     <div class="fa fa-pencil" (click)="navigateBlog(blog)"></div>
     </div>
 </div>
-<div *ngIf = "!blogs || blogs === undefined || blogs?.length === 0">
+<div *ngIf = "!shared.blogs || shared.blogs === undefined || shared.blogs?.length === 0">
     <h2>There is no post yet! Coming soon...</h2>
 </div>

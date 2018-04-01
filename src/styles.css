@@ -485,3 +485,8 @@
   color: blue;
   border: 1px solid darkblue;
 }
+@media (max-width: 993px) {
+  .post-cards {
+    display: none;
+  }
+}

@@ -13,19 +13,15 @@ export class BlogsComponent implements OnInit {
 
   blogs: Blog[];
   constructor(public shared:SharedService, private router: Router) { 
-    
   }
 
   ngOnInit() {
-   this.shared.getBlogs().subscribe(res=>{
-      this.blogs = res;
-    });
   }
 
   deleteBlog(blog: Blog) {
     if(confirm('Are you sure to delete this post permenantly?')){
       this.shared.deleteBlog(blog._id).subscribe(res => {
-        this.blogs.splice(this.blogs.indexOf(blog), 1);
+        this.shared.blogs.splice(this.blogs.indexOf(blog), 1);
       });
     }
   }
